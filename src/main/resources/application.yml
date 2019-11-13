@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: imageupload
+  banner:
+    location: classpath:/banner.txt
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 8192KB
+
+app:
+  images:
+    accepted-format-types: "image/jpeg"
+    output-format: jpg
+    resize-pool-size: 10
+    max-width-size: 1920
+  upload:
+    base-dir: "/home/laptop/Desktop/imageupload"
